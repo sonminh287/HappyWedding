@@ -4,9 +4,12 @@
   --pink: #ee0548;
   --black: #130f40;
 }
-
+._color {
+  color: pink;
+  text-decoration: none;
+}
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lucida Console", "Courier New", monospace;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -48,10 +51,30 @@ section {
   background: none;
   border-radius: 9px;
 }
+.btn1 {
+  display: inline-block;
+  margin-top: 1rem;
+  border: 0.2rem solid var(--black);
+  color: var(--black);
+  font-size: 1.7rem;
+  padding: 0.8rem 3rem;
+  cursor: pointer;
+  background: none;
+  border-radius: 9px;
+  position: absolute;
+  right: 214px;
+  width: 200px;
+  top: 20rem;
+}
+.btn1:hover {
+  background: green;
+  border-color: blue;
+  color: #fff;
+}
 
 .btn:hover {
-  background: var(--pink);
-  border-color: var(--pink);
+  background: green;
+  border-color: blue;
   color: #fff;
 }
 
@@ -110,19 +133,23 @@ header .navbar a:hover {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url(images/home-bg.jpg) no-repeat;
+  background: url(images/tq6.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .home .content span {
-  font-size: 3rem;
-  color: var(--pink);
+  font-size: 2.5rem;
+  color: red;
+  position: absolute;
+  right: 0px;
+  width: 600px;
+  top: 16rem;
 }
 
 .home .content h3 {
-  font-size: 6rem;
+  font-size: 20rem;
   color: var(--black);
   width: 60rem;
 }
@@ -270,7 +297,7 @@ header .navbar a:hover {
   margin: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.9);
-  background: #fff url(/images/card-bg.png) no-repeat;
+  background: #fff url(/images/card_bg.png) no-repeat;
   padding: 4.7rem 2rem;
   text-align: center;
   background-size: cover;
@@ -407,10 +434,11 @@ header .navbar a:hover {
 
 .footer {
   padding: 2.5rem 1.5rem;
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--black);
-  background: #fff;
+  background: rgb(250, 168, 223);
   text-align: center;
+  color: blue;
 }
 
 .footer span {
